@@ -1,42 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital element</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/media.css">
-  <link rel="shortcut icon" href="./img/ico/figma.ico" type="image/x-icon">
-</head>
-<body>
-  <div class="form-wrap">
-    <div class="hero"><img src="./img/jpg/beautiful-young-asian-woman.jpg" alt=""></div>
-    
- <form action="#" class="user-form">
-   <label for="name">Ваше имя</label>
-   <input class="user-form_input" type="text" name="name">
-   <label for="phone">Телефон</label>
-   <input class="user-form_input" type="text" name="phone">
-   <label for="password">Пароль</label>
-   <input class="user-form_input" type="password" name="password">
-   <label>
-    <input type="radio" name="love">Люблю свою работу
-    <div class="user-form_input_love"></div>
-  </label>
-  <label>
-    <input type="radio" name="big-love">Очень люблю свою работу
-    <div class="user-form_input_big_love"></div>
-  </label>
-    <button class="user-form_button" type="submit">Отправить анкету</button>
- </form>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Digital element</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/media.css" />
+		<link rel="shortcut icon" href="./img/ico/figma.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<div class="form-wrap">
+			<div class="hero">
+				<img
+					class="hero__img"
+					src="./img/jpg/beautiful-young-asian-woman.jpg"
+					alt="beautiful-woman"
+				/>
+			</div>
+			<div class="greetings">
+				<p>Hello<br />my friend</p>
+			</div>
 
- <div class="greetings">
-   <p>Hello<br>my friend</p>
- </div>
-  </div>
-</body>
+			<div class="user-container">
+				<form action="#" class="user-container__form">
+					<label class="user-container__title" for="check1">Ваше имя</label>
+					<input
+						class="user-container__form_input"
+						type="text"
+						name="name"
+						placeholder="Имя"
+            id="check1"
+					/>
+					<label class="user-container__title" for="check2">Телефон</label>
+					<input
+						class="user-container__form_input"
+						type="text"
+						name="phone"
+						placeholder="Номер телефона"
+            id="check2"
+					/>
+					<label class="user-container__title" for="check3">Пароль</label>
+					<input
+						class="user-container__form_input"
+						type="password"
+						name="password"
+						id="check3"
+						placeholder="&bull;&bull;&bull;&bull;&bull;&bull;"
+					/>
+					<span class="custom_pass"></span>
+
+					<div class="user-container__checked-box">
+						<label class="user-container__form_label" for="radio-1">
+							<input
+								class="user-container__form_radio"
+								type="radio"
+								id="radio-1"
+								name="radio"
+								value="1"
+							/>
+							<span class="custom__radio"></span>
+							Люблю свою работу</label
+						>
+					</div>
+					<div class="user-container__checked-box">
+						<label class="user-container__form_label" for="radio-2">
+							<input
+								class="user-container__form_radio"
+								type="radio"
+								id="radio-2"
+								name="radio"
+								value="2"
+							/>
+							<span class="custom__radio"></span>
+							Очень люблю свою работу</label
+						>
+					</div>
+
+					<button disabled class="user-container__form_button" type="submit">
+						Отправить анкету
+					</button>
+				</form>
+			</div>
+		</div>
+	</body>
 </html>
