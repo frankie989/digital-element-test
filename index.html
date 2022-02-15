@@ -36,16 +36,29 @@
 						type="text"
 						name="name"
 						placeholder="Имя"
-            id="check1"
+						id="check1"
+						autocomplete="off"
+						list="defaultName"
 					/>
+					<datalist id="defaultName">
+						<option value="Иван"></option>
+					</datalist>
+
 					<label class="user-container__title" for="check2">Телефон</label>
 					<input
 						class="user-container__form_input"
-						type="text"
+						type="tel"
 						name="phone"
 						placeholder="Номер телефона"
-            id="check2"
+						id="check2"
+						list="defaultTels"
+						autocomplete="off"
 					/>
+					<datalist id="defaultTels">
+						<option value="+7-900-111-11-11"></option>
+						<option value="8-900-111-11-11"></option>
+					</datalist>
+
 					<label class="user-container__title" for="check3">Пароль</label>
 					<input
 						class="user-container__form_input"
