@@ -5,8 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital element</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="shortcut icon" href="./img/ico/figma.ico" type="image/x-icon">
 </head>
 <body>
-  
+  <div class="form-wrap">
+    <div class="hero"><img src="./img/jpg/beautiful-young-asian-woman.jpg" alt=""></div>
+    
+ <form action="#" class="user-form">
+   <label for="name">Ваше имя</label>
+   <input class="user-form_input" type="text" name="name">
+   <label for="phone">Телефон</label>
+   <input class="user-form_input" type="text" name="phone">
+   <label for="password">Пароль</label>
+   <input class="user-form_input" type="password" name="password">
+   <label>
+    <input type="radio" name="love">Люблю свою работу
+    <div class="user-form_input_love"></div>
+  </label>
+  <label>
+    <input type="radio" name="big-love">Очень люблю свою работу
+    <div class="user-form_input_big_love"></div>
+  </label>
+    <button class="user-form_button" type="submit">Отправить анкету</button>
+ </form>
+
+ <div class="greetings">
+   <p>Hello<br>my friend</p>
+ </div>
+  </div>
 </body>
 </html>
