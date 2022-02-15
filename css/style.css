@@ -105,6 +105,11 @@ body {
 	margin-top: 19px;
 }
 
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+
 label {
 	cursor: pointer;
 }
@@ -190,6 +195,12 @@ label {
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
+
+
+.invalid{
+  border: 2px solid red;
+ }
+
 
 @media (max-width: 1850px) {
 	.hero {

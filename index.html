@@ -29,14 +29,14 @@
 			</div>
 
 			<div class="user-container">
-				<form action="#" class="user-container__form">
-					<label class="user-container__title" for="check1">Ваше имя</label>
+				<form action="#" class="user-container__form" id="form">
+					<label class="user-container__title" for="nick-name">Ваше имя</label>
 					<input
 						class="user-container__form_input"
 						type="text"
 						name="name"
 						placeholder="Имя"
-						id="check1"
+						id="nick-name"
 						autocomplete="off"
 						list="defaultName"
 					/>
@@ -44,13 +44,13 @@
 						<option value="Иван"></option>
 					</datalist>
 
-					<label class="user-container__title" for="check2">Телефон</label>
+					<label class="user-container__title" for="phone">Телефон</label>
 					<input
 						class="user-container__form_input"
 						type="tel"
 						name="phone"
 						placeholder="Номер телефона"
-						id="check2"
+						id="phone"
 						list="defaultTels"
 						autocomplete="off"
 					/>
@@ -59,12 +59,12 @@
 						<option value="8-900-111-11-11"></option>
 					</datalist>
 
-					<label class="user-container__title" for="check3">Пароль</label>
+					<label class="user-container__title" for="password">Пароль</label>
 					<input
 						class="user-container__form_input"
 						type="password"
 						name="password"
-						id="check3"
+						id="password"
 						placeholder="&bull;&bull;&bull;&bull;&bull;&bull;"
 					/>
 					<span class="custom_pass"></span>
@@ -96,11 +96,12 @@
 						>
 					</div>
 
-					<button disabled class="user-container__form_button" type="submit">
+					<button class="user-container__form_button" type="submit" id="submit">
 						Отправить анкету
 					</button>
 				</form>
 			</div>
 		</div>
+    <script type="module" src="./js/index.js"></script>
 	</body>
 </html>
