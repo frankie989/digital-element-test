@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-grey: #A9A9A9;
+  --color-purple: ##7D98F6;
+  --font1: 16px;
+  --font2: 18px;
+  --font3: 88px;
+}
+
+.body {
+  max-width: 1920px;
+  max-height: 1080px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
