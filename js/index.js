@@ -5,6 +5,12 @@ const password = document.getElementById('password');
 const form = document.querySelector('#form');
 
 
+form.addEventListener('keydown', function(event) {
+  if(event.keyCode == 13) {
+     event.preventDefault();
+  }
+});
+
 
 form.addEventListener('submit', function(evt) {
   evt.preventDefault();
